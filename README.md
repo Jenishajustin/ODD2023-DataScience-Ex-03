@@ -62,6 +62,25 @@ df.kurtosis()
 sns.boxplot(x='Salary',data=df)
 sns.boxplot(x='Experience_Years',data=df)
 ```
+#### diabetes.csv
+```
+import pandas as pd
+import numpy as np
+import seaborn as sns
+df = pd.read_csv("/diabetes.csv")
+df
+df.info()
+df.isnull().sum()
+df.dtypes
+df.describe()
+df['Glucose'].value_counts()
+sns.boxplot(x="Glucose",data=df)
+sns.countplot(x="Glucose",data=df)
+sns.distplot(df['Glucose'])
+sns.histplot(x="Glucose",data=df)
+df.skew()
+df.kurtosis()
+```
 ## OUTPUT:
 #### superstore.csv
 ![image](https://github.com/Jenishajustin/ODD2023-DataScience-Ex-03/assets/119405070/023fa84b-8e58-44de-8f96-509ef8acc4f5)
@@ -90,4 +109,13 @@ sns.boxplot(x='Experience_Years',data=df)
 ![image](https://github.com/Jenishajustin/ODD2023-DataScience-Ex-03/assets/119405070/d768a98d-c763-4330-9863-257bb32c5df1)
 ![image](https://github.com/Jenishajustin/ODD2023-DataScience-Ex-03/assets/119405070/9a2eb633-f3ec-4823-af08-c16815e2a6e1)
 ![image](https://github.com/Jenishajustin/ODD2023-DataScience-Ex-03/assets/119405070/663938e8-1187-48ed-9371-160d8bfc3895)
+
+#### diabetes.csv
+![image](https://github.com/Jenishajustin/ODD2023-DataScience-Ex-03/assets/119405070/d014bdb6-df24-413f-8ea6-7902a5ba8013)
+![image](https://github.com/Jenishajustin/ODD2023-DataScience-Ex-03/assets/119405070/baeb7c6f-3ba6-4905-8b86-9245d67ba180)
+![image](https://github.com/Jenishajustin/ODD2023-DataScience-Ex-03/assets/119405070/e249e336-ce10-4241-984b-9f31aae630fa)
+![image](https://github.com/Jenishajustin/ODD2023-DataScience-Ex-03/assets/119405070/da1d0ab1-73bb-4e31-9f6f-828e1fe1f813)
+
+## RESULT:
+Hence the univariate analysis is verified.
 
